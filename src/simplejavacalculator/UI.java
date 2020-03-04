@@ -88,7 +88,11 @@ public class UI implements ActionListener {
       but = new JButton[10];      
       for (int i = 0; i < 10; i++) {
          but[i] = new JButton(String.valueOf(i));
-      }      
+      }  
+      initButton();
+   }
+   
+   private void initButton(){
       butAdd = new JButton("+");      
       butMinus = new JButton("-");      
       butMultiply = new JButton("*");      
@@ -107,9 +111,9 @@ public class UI implements ActionListener {
       butCancel = new JButton("C");      
       butBinary = new JButton("Bin");      
       
-      calc = new Calculator();
-      
    }
+   
+   calc = new Calculator();
    
    public void init() {      
       frame.setSize(450, 450);
