@@ -88,24 +88,30 @@ public class UI implements ActionListener {
       but = new JButton[10];      
       for (int i = 0; i < 10; i++) {
          but[i] = new JButton(String.valueOf(i));
-      }      
-      butAdd = new JButton("+");      
-      butMinus = new JButton("-");      
-      butMultiply = new JButton("*");      
-      butDivide = new JButton("/");      
-      butEqual = new JButton("=");      
-      butSquareRoot = new JButton("sqrt");      
-      butSquare = new JButton("x*x");      
-      butOneDevidedBy = new JButton("1/x");      
-      butCos = new JButton("Cos");      
-      butSin = new JButton("Sin");      
-      butTan = new JButton("Tan");      
-      butxpowerofy = new JButton("x^y");      
-      butlog = new JButton("log10(x)");      
-      butrate = new JButton("x%");      
-      butabs = new JButton("abs(x)");      
-      butCancel = new JButton("C");      
-      butBinary = new JButton("Bin");      
+      }  
+     
+      initButton();
+     }
+      
+      Private void initButton(){
+         butAdd = new JButton("+");      
+         butMinus = new JButton("-");      
+         butMultiply = new JButton("*");      
+         butDivide = new JButton("/");      
+         butEqual = new JButton("=");      
+         butSquareRoot = new JButton("sqrt");      
+         butSquare = new JButton("x*x");      
+         butOneDevidedBy = new JButton("1/x");      
+         butCos = new JButton("Cos");      
+         butSin = new JButton("Sin");      
+         butTan = new JButton("Tan");      
+         butxpowerofy = new JButton("x^y");      
+         butlog = new JButton("log10(x)");      
+         butrate = new JButton("x%");      
+         butabs = new JButton("abs(x)");      
+         butCancel = new JButton("C");      
+         butBinary = new JButton("Bin");  
+      }
       
       calc = new Calculator();
       
