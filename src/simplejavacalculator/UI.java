@@ -109,12 +109,11 @@ public class UI implements ActionListener {
       butrate = new JButton("x%");      
       butabs = new JButton("abs(x)");      
       butCancel = new JButton("C");      
-      butBinary = new JButton("Bin");      
+      butBinary = new JButton("Bin");  
       
+      calc = new Calculator();
    }
-   
-   calc = new Calculator();
-   
+    
    public void init() {      
       frame.setSize(450, 450);
       frame.setVisible(true);
